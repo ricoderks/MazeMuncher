@@ -1,5 +1,9 @@
 # Maze Muncher <img src="man/figures/logo.png" align="right" height="120" alt="Maze Muncher icon" />
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ricoderks/MazeMuncher/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ricoderks/MazeMuncher/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 An original arcade maze-chase game, built as a [golem](https://thinkr-open.github.io/golem/) Shiny app.
 
 A hungry green blob munches seeds through neon mazes. Four sentries hunt it, and each one picks its target its own way:
