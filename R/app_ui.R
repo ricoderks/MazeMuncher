@@ -9,7 +9,11 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     bslib::page_sidebar(
-      title = tags$span(class = "mm-title", "Maze Muncher"),
+      title = tags$span(
+        class = "mm-title",
+        tags$img(src = "www/favicon.svg", class = "mm-logo", alt = ""),
+        "Maze Muncher"
+      ),
       theme = app_theme(),
       fillable = FALSE,
       sidebar = bslib::sidebar(
@@ -59,6 +63,9 @@ golem_add_external_resources <- function() {
 
   tags$head(
     favicon(),
+    tags$link(rel = "icon", type = "image/svg+xml", href = "www/favicon.svg"),
+    tags$link(rel = "apple-touch-icon", href = "www/apple-touch-icon.png"),
+    tags$meta(name = "theme-color", content = "#140b24"),
     bundle_resources(
       path = app_sys("app/www"),
       app_title = "Maze Muncher"

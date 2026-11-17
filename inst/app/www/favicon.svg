@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Maze Muncher</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#25153f"/>
+      <stop offset="1" stop-color="#120a21"/>
+    </linearGradient>
+    <radialGradient id="body" cx="0.36" cy="0.3" r="0.78">
+      <stop offset="0" stop-color="#e2ffe8"/>
+      <stop offset="0.32" stop-color="#7dfc9a"/>
+      <stop offset="1" stop-color="#2a8f4f"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Tile -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Neon maze wall: soft glow layers under a crisp line -->
+  <g fill="none" stroke="#2de2c4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 52 196 V 132 Q 52 52 132 52 H 380 Q 460 52 460 132 V 196" stroke-width="40" stroke-opacity="0.10"/>
+    <path d="M 52 196 V 132 Q 52 52 132 52 H 380 Q 460 52 460 132 V 196" stroke-width="26" stroke-opacity="0.18"/>
+    <path d="M 52 196 V 132 Q 52 52 132 52 H 380 Q 460 52 460 132 V 196" stroke-width="12"/>
+    <path d="M 52 316 V 380 Q 52 460 132 460 H 380 Q 460 460 460 380 V 316" stroke-width="40" stroke-opacity="0.10"/>
+    <path d="M 52 316 V 380 Q 52 460 132 460 H 380 Q 460 460 460 380 V 316" stroke-width="26" stroke-opacity="0.18"/>
+    <path d="M 52 316 V 380 Q 52 460 132 460 H 380 Q 460 460 460 380 V 316" stroke-width="12"/>
+  </g>
+
+  <!-- Seeds ahead of the blob -->
+  <g fill="#ffd9a8">
+    <path d="M 404 256 L 422 274 L 404 292 L 386 274 Z"/>
+    <path d="M 472 256 L 490 274 L 472 292 L 454 274 Z" fill-opacity="0.55"/>
+  </g>
+
+  <!-- Blob glow -->
+  <ellipse cx="228" cy="284" rx="164" ry="148" fill="#7dfc9a" fill-opacity="0.10"/>
+  <ellipse cx="228" cy="284" rx="152" ry="137" fill="#7dfc9a" fill-opacity="0.14"/>
+
+  <!-- Sprout -->
+  <path d="M 236 160 Q 236 132 252 116" fill="none" stroke="#2a8f4f" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="282" cy="112" rx="40" ry="18" transform="rotate(-28 282 112)" fill="#c6ff6b"/>
+
+  <!-- Body (slightly stretched: it is on the move) -->
+  <ellipse cx="228" cy="284" rx="140" ry="126" fill="url(#body)"/>
+
+  <!-- Eyes looking right -->
+  <circle cx="214" cy="258" r="36" fill="#ffffff"/>
+  <circle cx="292" cy="258" r="36" fill="#ffffff"/>
+  <circle cx="228" cy="262" r="18" fill="#1b1030"/>
+  <circle cx="306" cy="262" r="18" fill="#1b1030"/>
+  <circle cx="221" cy="254" r="6" fill="#ffffff"/>
+  <circle cx="299" cy="254" r="6" fill="#ffffff"/>
+</svg>
