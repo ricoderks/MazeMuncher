@@ -1,0 +1,30 @@
+Package: mazemuncher
+Title: Maze Muncher, an Original Maze-Chase Game Built with 'shiny'
+Version: 0.1.0
+Authors@R: 
+    person(given = "Rico",
+           family = "Derks",
+           role = c("aut", "cre"),
+           email = "r.j.e.derks@lumc.nl")
+Description: An original arcade maze-chase game delivered as a 'golem'
+    'shiny' application. A hungry blob munches seeds through neon mazes while
+    four sentries with distinct targeting personalities hunt it down. The
+    real-time game loop runs in the browser on an HTML canvas, while R
+    supplies the mazes (hand-made and procedurally generated), difficulty
+    curves, level progression and a persistent high-score table.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 4.1.0)
+Imports: 
+    bslib,
+    config,
+    golem,
+    shiny,
+    stats,
+    tools,
+    utils
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Config/roxygen2/version: 8.1.1

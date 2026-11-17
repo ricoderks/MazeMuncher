@@ -1,0 +1,111 @@
+/* Maze Muncher: page styling (the board itself is drawn on the canvas). */
+
+.mm-title {
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2de2c4;
+  text-shadow: 0 0 12px rgba(45, 226, 196, 0.55);
+}
+
+.mm-card {
+  background: #1a1030;
+  border: 1px solid rgba(45, 226, 196, 0.18);
+}
+
+.mm-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mm-hud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a39cc8;
+  font-variant-numeric: tabular-nums;
+}
+
+.mm-hud strong {
+  margin-left: 0.4rem;
+  font-size: 1.1rem;
+  color: #2de2c4;
+}
+
+.mm-hud-maze strong {
+  color: #ff5fa2;
+  margin-left: 0;
+}
+
+.mm-stage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mm-canvas {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+  background: #140b24;
+  box-shadow: 0 0 0 1px rgba(45, 226, 196, 0.25), 0 0 36px rgba(45, 226, 196, 0.12);
+  touch-action: none;
+  outline: none;
+}
+
+.mm-canvas:focus-visible {
+  box-shadow: 0 0 0 2px #2de2c4, 0 0 36px rgba(45, 226, 196, 0.25);
+}
+
+.mm-help {
+  font-size: 0.8rem;
+  color: #8f88b3;
+  text-align: center;
+}
+
+.mm-start {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.mm-scores h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a39cc8;
+}
+
+.mm-score-table {
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  --bs-table-bg: transparent;
+}
+
+.mm-score-table td:first-child {
+  color: #8f88b3;
+}
+
+.mm-diff {
+  margin-left: 0.35rem;
+  padding: 0 0.3rem;
+  border-radius: 4px;
+  background: rgba(255, 95, 162, 0.18);
+  color: #ff5fa2;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.mm-empty {
+  font-size: 0.85rem;
+  color: #8f88b3;
+}
+
+.mm-rank {
+  font-weight: 700;
+  color: #ffe66d;
+}

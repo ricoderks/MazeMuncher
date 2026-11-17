@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mazemuncher",
+      "runtimeExecutable": "Rscript",
+      "runtimeArgs": ["-e", "options(mazemuncher.scores_path = file.path(tempdir(), 'scores.rds')); pkgload::load_all(quiet = TRUE); run_app(options = list(port = as.integer(Sys.getenv('PORT', '4321')), launch.browser = FALSE))"],
+      "port": 4321
+    }
+  ]
+}
